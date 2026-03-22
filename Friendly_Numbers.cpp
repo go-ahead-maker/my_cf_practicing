@@ -24,16 +24,12 @@ int main()
         ll a;
         int cnt = 0;
         cin >> a;
-        if(a / 10 == 0){
-            cout << cnt << endl;
-            continue;
-        }
         ll _a = a;
         int len = 0;
         while(_a > 0){
             _a /= 10;
             len++;
-        }
+        
         ll left = a, right = (ll)pow(10, len);
         while(left <= right){
             ll mid = (left + right) / 2;
